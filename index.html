@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b20">
+  <title>Little Universe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <section id="welcome" class="screen welcome active">
+    <div class="welcome-orbit orbit-one"></div>
+    <div class="welcome-orbit orbit-two"></div>
+    <div class="welcome-content">
+      <p class="eyebrow">A LITTLE UNIVERSE, JUST FOR YOU</p>
+      <h1>ENTER</h1>
+      <p class="welcome-sub">Your journey begins beyond this point.</p>
+      <button class="neon-button" id="enterBtn">ENTER THE CITY <span>↗</span></button>
+      <div class="tiny-coordinate">NIGHT CITY · 2077</div>
+    </div>
+  </section>
+
+  <main id="city" class="screen city-screen">
+    <header class="topbar">
+      <a class="brand" href="#" data-page="home">LITTLE<span>UNIVERSE</span></a>
+      <div class="top-status"><i></i> CONNECTION ESTABLISHED</div>
+    </header>
+
+    <section id="homePage" class="page active">
+      <div class="city-scene">
+        <div class="moon"></div>
+        <div class="sun-glow"></div>
+        <div class="skyline skyline-back"></div>
+        <div class="skyline skyline-front"></div>
+        <div class="tower-label">ARASAKA</div>
+        <div class="street-glow"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">WELCOME TO NIGHT CITY</p>
+          <h2>Let's make<br><span>our own galaxy.</span></h2>
+          <p class="hero-description">A small place among endless stars, made to celebrate you.</p>
+          <button class="neon-button" data-page="letter">TAKE A LOOK <span>↗</span></button>
+        </div>
+        <div class="city-coordinates">NC-2077 / SECTOR 09 / DREAMS IN PROGRESS</div>
+      </div>
+
+      <div class="portal-grid">
+        <button class="portal-card" data-page="letter">
+          <span class="portal-icon">✦</span>
+          <span class="portal-title">A LETTER FOR YOU</span>
+          <span class="portal-caption">A few words from my heart</span>
+          <span class="portal-arrow">↗</span>
+        </button>
+        <button class="portal-card" data-page="messages">
+          <span class="portal-icon">⌘</span>
+          <span class="portal-title">HIDDEN MESSAGES</span>
+          <span class="portal-caption">Little secrets scattered in this universe</span>
+          <span class="portal-arrow">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="letterPage" class="page content-page">
+      <button class="back-link" data-page="home">← BACK TO NIGHT CITY</button>
+      <div class="letter-panel">
+        <p class="eyebrow">PERSONAL TRANSMISSION // 001</p>
+        <h2>To my favorite person,</h2>
+        <div class="letter-text">
+          <p>On your birthday, I wish you years filled with happiness, surrounded by the people you love, a heart that never knows sadness, and days that are just as beautiful as your soul.</p>
+          <p>I hope I get to see you achieve all your dreams and reach the place you truly deserve. I'll always cheer you on, support you, and be proud of every step you take.</p>
+          <p>May life bring you countless reasons to smile, unexpected adventures, and memories worth keeping. And here's to all the little moments and entire galaxies still waiting for us.</p>
+          <p class="signature">layla <span>✦</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="messagesPage" class="page content-page messages-page">
+      <button class="back-link" data-page="home">← BACK TO NIGHT CITY</button>
+      <div class="messages-heading">
+        <p class="eyebrow">ENCRYPTED ARCHIVE // 015 FRAGMENTS</p>
+        <h2>Hidden <span>Messages</span></h2>
+        <p>Some words are waiting to find you. A new message appears every time you open this archive.</p>
+      </div>
+      <div class="message-console">
+        <div class="console-top"><span>INCOMING TRANSMISSION</span><span id="messageCounter">FRAGMENT -- / 14</span></div>
+        <div class="message-symbol">✧</div>
+        <div id="messageText" class="message-text">Searching the universe for a signal...</div>
+        <div id="messageHint" class="message-hint">ONE MESSAGE. ONE MOMENT. KEEP IT.</div>
+        <div id="finalStamp" class="final-stamp" hidden>ALL FRAGMENTS DECRYPTED</div>
+      </div>
+      <div class="message-actions">
+        <button id="nextMessageBtn" class="neon-button">REVEAL A MESSAGE <span>↗</span></button>
+        <p id="progressText" class="progress-text">0 / 14 DISCOVERED</p>
+      </div>
+      <div class="archive-track"><div id="progressBar"></div></div>
+      <p class="archive-note">Each fragment appears only once on this device. The final transmission unlocks after all fourteen fragments have been found.</p>
+    </section>
+
+    <footer class="footer">MADE OF STARDUST · BUILT FOR ONE UNIVERSE</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
